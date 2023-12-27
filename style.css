@@ -1,5 +1,4 @@
-*
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,13 +6,63 @@
 }
 
 :root {
-    --light_pink : hsl(275, 100%, 97%);
-    --grayish_purple : hsl(292, 16%, 49%);
-    --dark_purple : hsl(292, 42%, 14%);
+    --light_pink: hsl(275, 100%, 97%);
+    --grayish_purple: hsl(292, 16%, 49%);
+    --dark_purple: hsl(292, 42%, 14%);
 }
 
-body
-{
+body {
     background-color: var(--light_pink);
-    
+    background-image: url(/assets/images/background-pattern-desktop.svg);
+    /* background-position: top; */
+    background-size: contain;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body main {
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.card {
+    .card_header {
+        display: flex;
+        margin-bottom: 30px;
+
+        /* Star */
+        img {
+            margin-right: 20px;
+        }
+    }
+}
+
+.card .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.card .inner_content .ans{
+    display: none;
+}
+.toggle_button{
+    display: flex;
+}
+.line {
+    height: 0.1px;
+    width: 100%;
+    background-color: lightgrey;
+    display: block;
+    margin: 10px 0;
+}
+.attribution{
+    text-align: center;
+    color: black;
 }
