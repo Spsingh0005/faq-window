@@ -30,31 +30,9 @@ body main {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
+    transition: all 1s ease;
 }
 
-.card {
-    .card_header {
-        display: flex;
-        margin-bottom: 30px;
-
-        /* Star */
-        img {
-            margin-right: 20px;
-        }
-    }
-}
-
-.card .content {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-}
-.card .inner_content .ans{
-    display: none;
-}
-.toggle_button{
-    display: flex;
-}
 .line {
     height: 0.1px;
     width: 100%;
@@ -62,7 +40,38 @@ body main {
     display: block;
     margin: 10px 0;
 }
-.attribution{
+
+.accordion-content {
+    display: none;
+    transition: display 1s ease-in-out;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+.plus.hide {
+    display: none;
+}
+
+
+
+.accordion-section.active .accordion-content {
+    display: block;
+    transition: display 1s ease-in-out;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.attribution {
     text-align: center;
-    color: black;
+}
+
+.card_header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
