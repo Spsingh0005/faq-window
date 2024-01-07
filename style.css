@@ -13,7 +13,7 @@
 
 body {
     background-color: var(--light_pink);
-    background-image: url('./images/background-pattern-desktop.svg');
+    background-image: url(/assets/images/background-pattern-desktop.svg);
     /* background-position: top; */
     background-size: contain;
     width: 100%;
